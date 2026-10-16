@@ -1,219 +1,157 @@
-# Awesome-Automl-Hyperparameter-Tuning
+# Awesome AutoML & Hyperparameter Tuning
 
-## Top AutoML & Hyperparameter Tuning Ecosystem
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Track Awesome List](https://escaped-awesome.vercel.app/api/badge?url=https://github.com/ishandutta2007/Awesome-Automl-Hyperparameter-Tuning)](https://escaped-awesome.vercel.app)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+> A curated directory of the best **Automated Machine Learning (AutoML)** platforms, **Hyperparameter Optimization (HPO)** frameworks, **Neural Architecture Search (NAS)** engines, and distributed Bayesian optimization tools.
 
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Neural Architecture Search, Bayesian Optimization & Kubernetes-Native Tuning*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **AutoML & Hyperparameter Tuning**. These tools enable data scientists and ML engineers to automate model selection, feature engineering, and hyperparameter optimization—turning manual trial-and-error into systematic, reproducible search.
-
-
-
-**Examples** include Google Cloud Vertex AI Vizier, AWS SageMaker Autopilot, SigOpt (Intel), Ray Tune, Optuna, Weights & Biases Sweeps, DataRobot, H2O Driverless AI, Neptune.ai, and ClearML (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, distributed tuning, and open AutoML—ideal for ML engineers, data scientists, and organizations seeking transparent, vendor-independent optimization.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
+---
 
 ## Table of Contents
 
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS & Hosted Platforms](#saas--hosted-platforms)
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+---
 
+## Sector Overview & Market Dynamics
 
-## SaaS/Hosted Platforms
+The global **Automated Machine Learning (AutoML) & Hyperparameter Tuning** market is estimated at **$2.34B – $4.5B** in 2025 and is projected to reach **$3.43B – $6.5B+** by 2026, compounding at an accelerated **45%–48% CAGR**.
 
+Market dynamics exhibit **moderate fragmentation with multi-cloud polarization**:
+- **Hyperscalers (Google Cloud, AWS, Microsoft Azure)** dominate turnkey enterprise pipeline hosting with integrated, consumption-billed black-box optimizers (Vizier, SageMaker Autopilot).
+- **Specialized Enterprise Platforms (DataRobot, H2O.ai, W&B, ClearML)** defend defensible footholds across governance, high-compliance financial/healthcare modeling, and LLM fine-tuning pipelines.
+- Simultaneously, **open-source frameworks (Ray Tune, Optuna, FLAML, Katib)** drive deep bottom-up adoption, preventing a total "winner-take-all" outcome by giving engineering teams transparent, vendor-agnostic control over massive distributed search spaces.
 
+---
 
-- **[Google Cloud Vertex AI Vizier](https://cloud.google.com/vertex-ai)**  
+## SaaS & Hosted Platforms
 
-  **Google's black-box hyperparameter tuning service** integrated with Vertex AI. Features **Bayesian optimization** with transfer learning across studies. Handles **multi-objective optimization** and **parallel trials** natively. **Per-node-hour pricing**—costs scale with dataset size and trial count .
+| Platform | Company Valuation / Revenue | Starting Pricing Tier | Free Tier & Free Trial Limits | Key Highlights & Architecture |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Google Cloud Vertex AI Vizier](https://cloud.google.com/vertex-ai)** | **Alphabet: ~$2.2T+ Market Cap** ($350B+ Ann. Revenue) | **$0.05 / hour** per study node (plus underlying Vertex AI compute, e.g., ~$0.15–$0.40+/hr per n1-standard instance) | **90-day free trial with $300 cloud credits** across all Google Cloud services; Vertex AI offers monthly free tiers on select API evaluations. | Black-box hyperparameter tuning service featuring transfer learning across Bayesian optimization studies, multi-objective optimization, and native distributed trial coordination. |
+| **[AWS SageMaker Autopilot](https://aws.amazon.com/sagemaker/autopilot/)** | **Amazon: ~$1.9T+ Market Cap** ($570B+ Ann. Revenue) | **$0.05 / hour** for SageMaker Studio notebook / training job coordinator (e.g. `ml.t3.medium` @ ~$0.05/hr; pay-as-you-go based on underlying EC2 instance type) | **AWS Free Tier (2 months free)**: 250 hours per month of `ml.t3.medium` instances for SageMaker Studio; 12-month free tier credits across core AWS. | Fully managed AutoML automating feature engineering, algorithm selection, and hyperparameter tuning with transparent Python notebook generation and deployable model artifacts. |
+| **[SigOpt (Intel)](https://sigopt.com/)** | **Intel: ~$95B+ Market Cap** ($54B+ Ann. Revenue) | **Enterprise private offer starting at ~$10,000 / year** (also available bundled under Intel Tiber AI Cloud compute subscriptions) | **30-day free trial** with full access to SigOpt experiment management, multi-metric optimization, and API endpoints for up to 5 concurrent experiments. | Intelligent experiment engine utilizing advanced Bayesian optimization, multi-objective trade-offs, and early stopping for complex deep learning and simulations. |
+| **[Weights & Biases Sweeps](https://wandb.ai/)** | **W&B: ~$1.25B Valuation** (~$60M ARR) | **$60 / user / month** (Pro tier billed annually or monthly) | **Free forever plan (Personal)**: 1 seat, up to 5 model registry seats, 5 GB cloud storage, 1 GB Weave ingestion; also includes a **30-day free team trial**. | Industry standard ML experiment tracking platform with native Sweeps orchestrating Bayesian optimization, Hyperband early stopping, and interactive coordinate plots. |
+| **[DataRobot](https://www.datarobot.com/)** | **DataRobot: ~$3.0B Valuation** (~$150M+ ARR) | **Enterprise custom contracts starting at ~$100,000 / year** (available via AWS & Azure Marketplace Private Offers) | **30-day free trial** with access to core automated feature engineering, multi-model leaderboard comparisons, and interactive ML/LLM playgrounds. | Enterprise-grade AutoML suite featuring automated compliance and governance documentation, continuous model monitoring, and challenger pipeline execution. |
+| **[H2O Driverless AI](https://h2o.ai/)** | **H2O.ai: ~$1.7B Valuation** (~$60M ARR) | **Enterprise license starting at ~$25,000 / year** (also available on AWS Marketplace BYOL & hourly SaaS packaging) | **21-day free trial** full-feature license key for local or cloud deployments; plus a **2-hour instant test drive** via H2O Aquarium Cloud without installation. | Automated feature engineering, model selection, and hyperparameter tuning with automatic MOJO scoring pipelines for zero-dependency, low-latency deployments. |
+| **[Neptune.ai](https://neptune.ai/)** | **Acquired by OpenAI (OpenAI: ~$157B Valuation)** | **$49 / month** (Starting Team tier prior to acquisition / custom enterprise contract) | **Free forever tier**: 1 user seat, 1 private project, 100 GB artifact storage, and 500 monitoring hours/month. | Collaborative metadata store and experiment tracker for ML models with seamless logging of hyperparameters, runs, and interactive metric comparison. |
+| **[ClearML](https://clear.ml/)** | **ClearML: ~$200M Valuation** (~$15M ARR) | **$15 / user / month** (Pro tier for teams up to 10 users + pay-as-you-go GPU compute orchestration) | **Free forever Community tier**: Up to 3 users on ClearML hosted cloud, 100 GB artifact storage, 1M API calls/month, unlimited self-hosted open-source version. | Unified MLOps suite featuring experiment tracking, automated hyperparameter optimization, dynamic cloud GPU autoscaling, and pipeline orchestration. |
 
-
-
-- **[AWS SageMaker Autopilot](https://aws.amazon.com/sagemaker/autopilot/)**  
-
-  **Fully managed AutoML** that automatically explores data, selects algorithms, and tunes hyperparameters. Features **transparent model explanations** and **deployment-ready artifacts**. Integrated with SageMaker Studio for end-to-end ML workflows.
-
-
-
-- **[SigOpt (Intel)](https://sigopt.com/)**  
-
-  **Enterprise hyperparameter optimization** with **Bayesian optimization**, **multi-metric optimization**, and **early stopping**. Features **experiment tracking** and **ensemble strategies**. Acquired by Intel for enterprise AI tuning.
-
-
-
-- **[Weights & Biases Sweeps](https://wandb.ai/)**  
-
-  **Experiment tracking with hyperparameter sweeps** integrated into the W&B platform. Features **Bayesian, random, and grid search**, **early termination** (Hyperband), and **visualization** of sweep results. **The most widely used experiment tracking platform** with tuning built in.
-
-
-
-- **[DataRobot](https://www.datarobot.com/)**  
-
-  **Enterprise AutoML platform** with **model monitoring, challenger comparison, and compliance documentation** . Features **LLM fine-tuning workflows** (2025–2026 releases). **The enterprise governance play**—justifies cost for large institutions managing regulatory risk .
-
-
-
-- **[H2O Driverless AI](https://h2o.ai/platform/ai-cloud/make/h2o-driverless-ai/)**  
-
-  **Automatic machine learning platform** with **feature engineering, model selection, and hyperparameter tuning**. Features **MOJO export** for deployment without cloud dependency .
-
-
-
-- **[Neptune.ai](https://neptune.ai/)**  
-
-  **Experiment tracking and model registry** for ML teams. Features **hyperparameter logging**, **comparison dashboards**, and **integration with major frameworks**.
-
-
-
-- **[ClearML](https://clear. ml/)**  
-
-  **Open-source MLOps platform** with **experiment management**, **hyperparameter optimization**, and **pipeline orchestration**. Features **auto-scaler** for cloud GPU provisioning and **model serving**.
-
-
+---
 
 ## Open-Source GitHub Projects
 
+Ranked by GitHub stargazers count:
 
+- **[Ray (Ray Tune)](https://github.com/ray-project/ray)** [![GitHub stars](https://img.shields.io/github/stars/ray-project/ray?style=social&color=white)](https://github.com/ray-project/ray/stargazers)  
+  *Scalable, distributed hyperparameter tuning and model optimization built on the Ray computing engine.*  
+  **Highlights:** Multi-fidelity algorithms (ASHA, Hyperband, Population-Based Training), distributed execution across multi-node clusters with elastic fault tolerance, and native integrations with PyTorch, TensorFlow, LightGBM, and Hugging Face.
 
-- **[Katib (Kubeflow)](https://github.com/kubeflow/katib)**  
+- **[MLflow](https://github.com/mlflow/mlflow)** [![GitHub stars](https://img.shields.io/github/stars/mlflow/mlflow?style=social&color=white)](https://github.com/mlflow/mlflow/stargazers)  
+  *Open-source AI lifecycle platform for experiment tracking, parameters logging, and model packaging.*  
+  **Highlights:** Comprehensive parameter and metric logging APIs, model registry, artifact storage, and seamless integration with Optuna, Hyperopt, and Ray Tune for distributed trial tracking.
 
-  **Kubernetes-native Hyperparameter Tuning and Neural Architecture Search** (Apache-2.0) . **The reference implementation for cloud-native AutoML** . **Architecture**: **Experiment** (single tuning run with objective, search space, search algorithm), **Suggestion** (proposed hyperparameter values), **Trial** (one iteration with worker job instance), **Worker** (process evaluating a Trial) . **Search algorithms**: **Bayesian Optimization, Random Search, Grid Search, Hyperband, Population-Based Training (PBT), and more** . **Python SDK** with `katib_client.tune()` for programmatic experiment creation . **YAML-based Experiment specification** for declarative configuration . **NAS support** (alpha) for neural architecture search . **Dashboard UI** (`katib-ui`) and **MySQL backend** (`katib-mysql`) for metrics storage . **The best choice for teams running Kubeflow or Kubernetes-native ML pipelines**—integrates with existing cluster infrastructure without additional orchestration overhead.
+- **[Optuna](https://github.com/optuna/optuna)** [![GitHub stars](https://img.shields.io/github/stars/optuna/optuna?style=social&color=white)](https://github.com/optuna/optuna/stargazers)  
+  *Hyperparameter optimization framework with an intuitive Pythonic define-by-run API.*  
+  **Highlights:** Lightweight and modular, dynamic search space formulation, high-performance pruning algorithms (Median, Successive Halving, Hyperband), relational DB trial persistence, and interactive visualization dashboards.
 
+- **[Microsoft NNI (Neural Network Intelligence)](https://github.com/microsoft/nni)** [![GitHub stars](https://img.shields.io/github/stars/microsoft/nni?style=social&color=white)](https://github.com/microsoft/nni/stargazers)  
+  *Toolkit for automated machine learning, Neural Architecture Search (NAS), and model compression.*  
+  **Highlights:** Comprehensive tuning algorithms (Bayesian, Annealing, Evolution, PBT), advanced hardware-aware NAS algorithms, model pruning/quantization, and multi-platform training coordinators (Local, Remote, Kubernetes, OpenPAI).
 
+- **[Ludwig](https://github.com/ludwig-ai/ludwig)** [![GitHub stars](https://img.shields.io/github/stars/ludwig-ai/ludwig?style=social&color=white)](https://github.com/ludwig-ai/ludwig/stargazers)  
+  *Declarative machine learning and LLM fine-tuning framework with integrated hyperparameter search.*  
+  **Highlights:** Configuration-driven model creation using YAML, native Ray Tune integration for distributed hyperparameter optimization, and end-to-end support from tabular models to deep multimodal architectures.
 
-- **[Optuna](https://github.com/optuna/optuna)**  
+- **[AutoGluon](https://github.com/autogluon/autogluon)** [![GitHub stars](https://img.shields.io/github/stars/autogluon/autogluon?style=social&color=white)](https://github.com/autogluon/autogluon/stargazers)  
+  *Robust AutoML for tabular, multimodal, text, and time series data.*  
+  **Highlights:** Multi-layer model stacking, automatic ensemble selection, zero-effort feature engineering, deep foundation model fine-tuning, and state-of-the-art benchmark performance requiring minimal configuration.
 
-  **The most widely adopted open-source hyperparameter optimization framework** (MIT) . **14,650+ GitHub stars** . **Define-by-run API**—search spaces are Python code, not static configs. **Pruning algorithms** (Median, Hyperband, ASHA, Successive Halving) for early termination of unpromising trials. **Distributed optimization** with support for parallel and distributed training. **Visualization** with Plotly-based interactive plots. **Integration with PyTorch, TensorFlow, Keras, scikit-learn, XGBoost, LightGBM, and more**. **The default choice for general HPO**—easy to learn, powerful enough for production .
+- **[TPOT](https://github.com/EpistasisLab/tpot)** [![GitHub stars](https://img.shields.io/github/stars/EpistasisLab/tpot?style=social&color=white)](https://github.com/EpistasisLab/tpot/stargazers)  
+  *Automated machine learning tool that optimizes scikit-learn pipelines using genetic programming.*  
+  **Highlights:** Automated feature preprocessing, model selection, and hyperparameter search that outputs readable, production-ready Python scikit-learn code.
 
+- **[PyCaret](https://github.com/pycaret/pycaret)** [![GitHub stars](https://img.shields.io/github/stars/pycaret/pycaret?style=social&color=white)](https://github.com/pycaret/pycaret/stargazers)  
+  *Open-source, low-code machine learning library in Python.*  
+  **Highlights:** Compares dozens of models with minimal lines of code, automates preprocessing, handles transformation pipelines, and provides modular hyperparameter tuning interfaces.
 
+- **[Auto-sklearn](https://github.com/automl/auto-sklearn)** [![GitHub stars](https://img.shields.io/github/stars/automl/auto-sklearn?style=social&color=white)](https://github.com/automl/auto-sklearn/stargazers)  
+  *Automated machine learning toolkit built on top of scikit-learn.*  
+  **Highlights:** Bayesian optimization via SMAC, meta-learning to warm-start optimization runs, and automated ensemble construction from evaluated models.
 
-- **[Ray Tune](https://github.com/ray-project/ray)**  
+- **[Hyperopt](https://github.com/hyperopt/hyperopt)** [![GitHub stars](https://img.shields.io/github/stars/hyperopt/hyperopt?style=social&color=white)](https://github.com/hyperopt/hyperopt/stargazers)  
+  *Distributed asynchronous hyperparameter optimization library in Python.*  
+  **Highlights:** Pioneered the Tree-structured Parzen Estimator (TPE) algorithm, supports complex and awkward search spaces (including conditional parameters), with distributed scaling over MongoDB and Apache Spark.
 
-  **Scalable hyperparameter tuning built on Ray** (Apache-2.0) . **Multi-fidelity optimization** (ASHA, Hyperband, Population-Based Training). **Distributed execution** across clusters with automatic fault tolerance. **Integration with PyTorch, TensorFlow, XGBoost, and more**. **Best for large-scale tuning**—when you need to search thousands of configurations across multiple machines .
+- **[H2O-3 (H2O AutoML)](https://github.com/h2oai/h2o-3)** [![GitHub stars](https://img.shields.io/github/stars/h2oai/h2o-3?style=social&color=white)](https://github.com/h2oai/h2o-3/stargazers)  
+  *Distributed, scalable in-memory machine learning platform with fully automated pipeline construction.*  
+  **Highlights:** Automatic training and cross-validation of diverse algorithms (GBM, XGBoost, Random Forest, Deep Learning), stacked ensembles, and lightning-fast MOJO export for instant deployment.
 
+- **[Aim](https://github.com/aimhubio/aim)** [![GitHub stars](https://img.shields.io/github/stars/aimhubio/aim?style=social&color=white)](https://github.com/aimhubio/aim/stargazers)  
+  *Open-source, self-hosted AI metadata and hyperparameter exploration UI.*  
+  **Highlights:** High-performance storage and tracking of tens of thousands of ML training runs, hyperparameter parallel coordinate charts, and sub-second metrics filtering.
 
+- **[FLAML](https://github.com/microsoft/FLAML)** [![GitHub stars](https://img.shields.io/github/stars/microsoft/FLAML?style=social&color=white)](https://github.com/microsoft/FLAML/stargazers)  
+  *Fast and lightweight automated machine learning and hyperparameter tuning library.*  
+  **Highlights:** Cost-aware and resource-constrained search strategies (CFO and BlendSearch), minimal computational overhead, low latency, and automated tuning across classification, regression, and LLMs.
 
-- **[MLJAR AutoML](https://github.com/mljar/mljar-supervised)**  
+- **[Nevergrad](https://github.com/facebookresearch/nevergrad)** [![GitHub stars](https://img.shields.io/github/stars/facebookresearch/nevergrad?style=social&color=white)](https://github.com/facebookresearch/nevergrad/stargazers)  
+  *Python derivative-free optimization platform from Meta AI Research.*  
+  **Highlights:** Zero-gradient optimization algorithms (evolution strategies, differential evolution, particle swarm, quasi-random search), noisy and multi-objective optimization support.
 
-  **Tabular AutoML with reports, explanations, feature engineering, tuning, stacking, and ensembling** (Apache-2.0) . **Powered by mljar-supervised**. **Built around reports and explainability from the beginning**—gives you models, reports, explanations, and artifacts that can be reviewed later . **Best for privacy-sensitive, explainable, local business modeling** .
+- **[MLJAR AutoML (mljar-supervised)](https://github.com/mljar/mljar-supervised)** [![GitHub stars](https://img.shields.io/github/stars/mljar/mljar-supervised?style=social&color=white)](https://github.com/mljar/mljar-supervised/stargazers)  
+  *Automated machine learning framework with complete interpretability, markdown reports, and feature engineering.*  
+  **Highlights:** Generates comprehensive explainability reports (SHAP values, feature importance, ROC curves), four dedicated operation modes (Explain, Perform, Compete, Optuna), and automated stacked ensembling.
 
+- **[KerasTuner](https://github.com/keras-team/keras-tuner)** [![GitHub stars](https://img.shields.io/github/stars/keras-team/keras-tuner?style=social&color=white)](https://github.com/keras-team/keras-tuner/stargazers)  
+  *Hyperparameter tuning engine specialized for Keras, TensorFlow 2, and PyTorch deep learning models.*  
+  **Highlights:** Bayesian optimization, Hyperband, and Random Search tuners with native support for tensorboard visualizations, distributed execution, and custom tuning objectives.
 
+- **[Scikit-Optimize (skopt)](https://github.com/scikit-optimize/scikit-optimize)** [![GitHub stars](https://img.shields.io/github/stars/scikit-optimize/scikit-optimize?style=social&color=white)](https://github.com/scikit-optimize/scikit-optimize/stargazers)  
+  *Sequential model-based optimization library built on top of NumPy, SciPy, and Scikit-Learn.*  
+  **Highlights:** Drop-in replacement for scikit-learn's `GridSearchCV` (`BayesSearchCV`), Gaussian process regression, decision tree regressors, and convergence plotting tools.
 
-- **[AutoGluon](https://github.com/autogluon/autogluon)**  
+- **[Katib (Kubeflow)](https://github.com/kubeflow/katib)** [![GitHub stars](https://img.shields.io/github/stars/kubeflow/katib?style=social&color=white)](https://github.com/kubeflow/katib/stargazers)  
+  *Kubernetes-native AutoML, Hyperparameter Tuning, and Neural Architecture Search engine.*  
+  **Highlights:** Cloud-native architecture orchestrating Experiments, Trials, and Suggestions on Kubernetes, framework-agnostic worker execution, and tight integration with Kubeflow ML pipelines.
 
-  **Fast and accurate ML in 3 lines of code** (Apache-2.0) . **10,594+ GitHub stars** . **Broadest open-source coverage**—tabular, time series, multimodal, and foundation-model support . **Multi-layer stacking and automatic feature engineering**. **Best for maximum benchmark performance and broad task coverage** .
+- **[AutoDL-Projects](https://github.com/D-X-Y/AutoDL-Projects)** [![GitHub stars](https://img.shields.io/github/stars/D-X-Y/AutoDL-Projects?style=social&color=white)](https://github.com/D-X-Y/AutoDL-Projects/stargazers)  
+  *Neural Architecture Search (NAS) and Automated Deep Learning benchmark repository.*  
+  **Highlights:** Codebase for NAS-Bench-101/201, providing foundational algorithmic implementations for cell-based, topology-based, and hardware-aware neural architecture optimization.
 
+- **[AIDE ML](https://github.com/WecoAI/aideml)** [![GitHub stars](https://img.shields.io/github/stars/WecoAI/aideml?style=social&color=white)](https://github.com/WecoAI/aideml/stargazers)  
+  *Autonomous AI agent that writes, evaluates, debugs, and optimizes machine learning solutions.*  
+  **Highlights:** Tree-search driven exploration across data pipelines and modeling architectures, iterative code generation, and competitive benchmarking on Kaggle tasks.
 
+- **[Optuna Dashboard](https://github.com/optuna/optuna-dashboard)** [![GitHub stars](https://img.shields.io/github/stars/optuna/optuna-dashboard?style=social&color=white)](https://github.com/optuna/optuna-dashboard/stargazers)  
+  *Real-time web monitoring and control dashboard for Optuna studies.*  
+  **Highlights:** Interactive visualization of hyperparameter importances, high-dimensional Pareto fronts for multi-objective optimization, and live trial management.
 
-- **[FLAML](https://github.com/microsoft/FLAML)**  
+- **[ConfigSpace](https://github.com/automl/ConfigSpace)** [![GitHub stars](https://img.shields.io/github/stars/automl/ConfigSpace?style=social&color=white)](https://github.com/automl/ConfigSpace/stargazers)  
+  *Python configuration space management package for hyperparameter optimization and AutoML.*  
+  **Highlights:** Manages continuous, categorical, ordinal, and conditional hyperparameters; powers search space definitions for Auto-sklearn, SMAC3, and related AutoML tools.
 
-  **Resource-aware AutoML and tuning** (MIT). **Fast, budget-aware model search**—excellent when compute budget and training time matter . **Lightweight and efficient** with support for classification, regression, and time series.
-
-
-
-- **[TPOT](https://github.com/EpistasisLab/tpot)**  
-
-  **Genetic programming for pipeline search** (LGPL-3.0) . **10,049+ GitHub stars** . **Outputs scikit-learn code** that teams can read and modify . **Competitive with H2O, weaker than Auto-sklearn** on accuracy . **Best for discovering pipeline structures** and interpretable ML pipelines .
-
-
-
-- **[H2O AutoML](https://github.com/h2oai/h2o-3)**  
-
-  **Distributed enterprise AutoML** with algorithm portfolios and stacked ensembles (Apache-2.0) . **Fastest open-source option**—trains models in 5–10 minutes typically . **Competitive accuracy on tabular data**. **Best for scalable tabular ML in enterprise environments** .
-
-
-
-- **[Auto-sklearn](https://github.com/automl/auto-sklearn)**  
-
-  **Automated machine learning with scikit-learn** (BSD-3-Clause) . **8,128+ GitHub stars** . **Bayesian optimization, meta-learning, ensemble selection**. **Often wins competitions**—5–15% better than H2O on hard problems . **Requires serious CPU** (16+ cores recommended) . **No recent major release**—latest official release from 2023 .
-
-
-
-- **[Hyperopt](https://github.com/hyperopt/hyperopt)**  
-
-  **Distributed asynchronous hyperparameter optimization** (BSD-3-Clause) . **7,598+ GitHub stars** . **The original Bayesian optimization library for Python**. **Tree-structured Parzen Estimator (TPE)** algorithm. **Foundation for many other tuning frameworks**.
-
-
-
-- **[Optuna Dashboard](https://github.com/optuna/optuna-dashboard)**  
-
-  **Real-time web dashboard for Optuna** (MIT) . **796+ GitHub stars** . **Visualize optimization history, parameter importance, and intermediate values**. **The standard companion tool for Optuna-based tuning**.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[NNI (Microsoft)](https://github.com/microsoft/nni)** — Neural Network Intelligence (MIT) . **14,365+ GitHub stars** . **Automates feature engineering, neural architecture search, model compression, and hyperparameter tuning**.
-
-- **[PyCaret](https://github.com/pycaret/pycaret)** — Open-source, low-code AutoML platform (MIT) . **9,836+ GitHub stars** . **PyCaret 4.0**: sklearn-native engine + React control plane .
-
-- **[MLflow](https://github.com/mlflow/mlflow)** — Open source AI engineering platform (Apache-2.0) . **27,484+ GitHub stars** . **Experiment tracking, model registry, and deployment**.
-
-- **[AIDE ML](https://github.com/WecoAI/aideml)** — Agent that writes, runs, debugs, and improves ML code (MIT) . **Autonomous ML engineering research**—needs careful review and compute control .
-
-- Community **n8n** workflows for tuning job scheduling and model deployment automation.
-
-
-
-**Frameworks for building custom systems**: Combine **Optuna** for general HPO with **Ray Tune** for distributed tuning, **Katib** for Kubernetes-native AutoML, **MLJAR AutoML** for explainable tabular modeling, and **AutoGluon** for broad task coverage—creating a fully self-hosted, enterprise-grade AutoML platform.
-
-
+---
 
 ## How to Contribute
 
+Contributions are warmly welcomed! Help keep this ecosystem map comprehensive and up-to-date:
 
+1. **Fork the repository** to your personal GitHub account.
+2. **Add or update entries** in [`README.md`](file:///C:/Users/ishan/Documents/Projects/Awesome-Automl-Hyperparameter-Tuning/README.md).
+3. Ensure open-source projects include star badges with `style=social&color=white` linking to the stargazers page, and keep listings sorted by star count.
+4. For SaaS tools, provide concrete starting pricing and explicit free tier or trial conditions.
+5. **Submit a Pull Request** with a descriptive summary of your changes.
 
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
+---
 
 ## Disclaimer
 
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- AutoML and hyperparameter tuning systems handling training data must comply with data protection regulations (GDPR, CCPA, etc.) and model licensing terms.
-
-- **Open-source AutoML is mature and production-ready.** Optuna (14K+ stars) is the default choice for general HPO . Ray Tune scales to clusters . Katib provides Kubernetes-native AutoML . AutoGluon delivers broad task coverage . **These are genuine alternatives to commercial platforms.**
-
-- **The right tool depends on your deployment environment, not the benchmark leaderboard.** "The best model is the one your team can monitor and retrain without external help" . **Choose based on operational fit, not accuracy alone.**
-
-- **auto-sklearn has no recent major release.** Latest official release from 2023 . **Not recommended as default for new production projects in 2026**—but historically important for legacy baselines .
-
-- **Tabular foundation models are emerging but gradient boosting remains strong.** "Large tabular datasets, strict latency requirements, custom feature engineering, and interpretability needs still make gradient boosting very strong" .
-
-- Self-hosted open-source solutions require proper compute provisioning, experiment tracking infrastructure, and ongoing maintenance. **AutoML is not a substitute for ML expertise**—it automates search, not problem formulation.
+- This curated list is maintained by the community for educational and research purposes—it does not constitute a formal commercial endorsement.
+- All AutoML platforms and hyperparameter search workflows handling enterprise data must adhere to relevant privacy and compliance mandates (GDPR, CCPA, HIPAA, SOC 2).
+- Framework choice should prioritize team maintainability, operational fit, and infrastructure requirements over raw benchmark leaderboards alone.
