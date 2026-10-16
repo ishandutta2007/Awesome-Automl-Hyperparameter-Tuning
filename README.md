@@ -58,91 +58,91 @@ Market dynamics exhibit **moderate fragmentation with multi-cloud polarization**
 
 Ranked by GitHub stargazers count:
 
-- **[Ray (Ray Tune)](https://github.com/ray-project/ray)** [![GitHub stars](https://img.shields.io/github/stars/ray-project/ray?style=social&color=white)](https://github.com/ray-project/ray/stargazers)  
+- **[Ray (Ray Tune)](https://github.com/ray-project/ray)** [![GitHub_Stars](https://img.shields.io/github/stars/ray-project/ray?style=social&color=white)](https://github.com/ray-project/ray/stargazers)  
   *Scalable, distributed hyperparameter tuning and model optimization built on the Ray computing engine.*  
   **Highlights:** Multi-fidelity algorithms (ASHA, Hyperband, Population-Based Training), distributed execution across multi-node clusters with elastic fault tolerance, and native integrations with PyTorch, TensorFlow, LightGBM, and Hugging Face.
 
-- **[MLflow](https://github.com/mlflow/mlflow)** [![GitHub stars](https://img.shields.io/github/stars/mlflow/mlflow?style=social&color=white)](https://github.com/mlflow/mlflow/stargazers)  
+- **[MLflow](https://github.com/mlflow/mlflow)** [![GitHub_Stars](https://img.shields.io/github/stars/mlflow/mlflow?style=social&color=white)](https://github.com/mlflow/mlflow/stargazers)  
   *Open-source AI lifecycle platform for experiment tracking, parameters logging, and model packaging.*  
   **Highlights:** Comprehensive parameter and metric logging APIs, model registry, artifact storage, and seamless integration with Optuna, Hyperopt, and Ray Tune for distributed trial tracking.
 
-- **[Optuna](https://github.com/optuna/optuna)** [![GitHub stars](https://img.shields.io/github/stars/optuna/optuna?style=social&color=white)](https://github.com/optuna/optuna/stargazers)  
+- **[Optuna](https://github.com/optuna/optuna)** [![GitHub_Stars](https://img.shields.io/github/stars/optuna/optuna?style=social&color=white)](https://github.com/optuna/optuna/stargazers)  
   *Hyperparameter optimization framework with an intuitive Pythonic define-by-run API.*  
   **Highlights:** Lightweight and modular, dynamic search space formulation, high-performance pruning algorithms (Median, Successive Halving, Hyperband), relational DB trial persistence, and interactive visualization dashboards.
 
-- **[Microsoft NNI (Neural Network Intelligence)](https://github.com/microsoft/nni)** [![GitHub stars](https://img.shields.io/github/stars/microsoft/nni?style=social&color=white)](https://github.com/microsoft/nni/stargazers)  
+- **[Microsoft NNI (Neural Network Intelligence)](https://github.com/microsoft/nni)** [![GitHub_Stars](https://img.shields.io/github/stars/microsoft/nni?style=social&color=white)](https://github.com/microsoft/nni/stargazers)  
   *Toolkit for automated machine learning, Neural Architecture Search (NAS), and model compression.*  
   **Highlights:** Comprehensive tuning algorithms (Bayesian, Annealing, Evolution, PBT), advanced hardware-aware NAS algorithms, model pruning/quantization, and multi-platform training coordinators (Local, Remote, Kubernetes, OpenPAI).
 
-- **[Ludwig](https://github.com/ludwig-ai/ludwig)** [![GitHub stars](https://img.shields.io/github/stars/ludwig-ai/ludwig?style=social&color=white)](https://github.com/ludwig-ai/ludwig/stargazers)  
+- **[Ludwig](https://github.com/ludwig-ai/ludwig)** [![GitHub_Stars](https://img.shields.io/github/stars/ludwig-ai/ludwig?style=social&color=white)](https://github.com/ludwig-ai/ludwig/stargazers)  
   *Declarative machine learning and LLM fine-tuning framework with integrated hyperparameter search.*  
   **Highlights:** Configuration-driven model creation using YAML, native Ray Tune integration for distributed hyperparameter optimization, and end-to-end support from tabular models to deep multimodal architectures.
 
-- **[AutoGluon](https://github.com/autogluon/autogluon)** [![GitHub stars](https://img.shields.io/github/stars/autogluon/autogluon?style=social&color=white)](https://github.com/autogluon/autogluon/stargazers)  
+- **[AutoGluon](https://github.com/autogluon/autogluon)** [![GitHub_Stars](https://img.shields.io/github/stars/autogluon/autogluon?style=social&color=white)](https://github.com/autogluon/autogluon/stargazers)  
   *Robust AutoML for tabular, multimodal, text, and time series data.*  
   **Highlights:** Multi-layer model stacking, automatic ensemble selection, zero-effort feature engineering, deep foundation model fine-tuning, and state-of-the-art benchmark performance requiring minimal configuration.
 
-- **[TPOT](https://github.com/EpistasisLab/tpot)** [![GitHub stars](https://img.shields.io/github/stars/EpistasisLab/tpot?style=social&color=white)](https://github.com/EpistasisLab/tpot/stargazers)  
+- **[TPOT](https://github.com/EpistasisLab/tpot)** [![GitHub_Stars](https://img.shields.io/github/stars/EpistasisLab/tpot?style=social&color=white)](https://github.com/EpistasisLab/tpot/stargazers)  
   *Automated machine learning tool that optimizes scikit-learn pipelines using genetic programming.*  
   **Highlights:** Automated feature preprocessing, model selection, and hyperparameter search that outputs readable, production-ready Python scikit-learn code.
 
-- **[PyCaret](https://github.com/pycaret/pycaret)** [![GitHub stars](https://img.shields.io/github/stars/pycaret/pycaret?style=social&color=white)](https://github.com/pycaret/pycaret/stargazers)  
+- **[PyCaret](https://github.com/pycaret/pycaret)** [![GitHub_Stars](https://img.shields.io/github/stars/pycaret/pycaret?style=social&color=white)](https://github.com/pycaret/pycaret/stargazers)  
   *Open-source, low-code machine learning library in Python.*  
   **Highlights:** Compares dozens of models with minimal lines of code, automates preprocessing, handles transformation pipelines, and provides modular hyperparameter tuning interfaces.
 
-- **[Auto-sklearn](https://github.com/automl/auto-sklearn)** [![GitHub stars](https://img.shields.io/github/stars/automl/auto-sklearn?style=social&color=white)](https://github.com/automl/auto-sklearn/stargazers)  
+- **[Auto-sklearn](https://github.com/automl/auto-sklearn)** [![GitHub_Stars](https://img.shields.io/github/stars/automl/auto-sklearn?style=social&color=white)](https://github.com/automl/auto-sklearn/stargazers)  
   *Automated machine learning toolkit built on top of scikit-learn.*  
   **Highlights:** Bayesian optimization via SMAC, meta-learning to warm-start optimization runs, and automated ensemble construction from evaluated models.
 
-- **[Hyperopt](https://github.com/hyperopt/hyperopt)** [![GitHub stars](https://img.shields.io/github/stars/hyperopt/hyperopt?style=social&color=white)](https://github.com/hyperopt/hyperopt/stargazers)  
+- **[Hyperopt](https://github.com/hyperopt/hyperopt)** [![GitHub_Stars](https://img.shields.io/github/stars/hyperopt/hyperopt?style=social&color=white)](https://github.com/hyperopt/hyperopt/stargazers)  
   *Distributed asynchronous hyperparameter optimization library in Python.*  
   **Highlights:** Pioneered the Tree-structured Parzen Estimator (TPE) algorithm, supports complex and awkward search spaces (including conditional parameters), with distributed scaling over MongoDB and Apache Spark.
 
-- **[H2O-3 (H2O AutoML)](https://github.com/h2oai/h2o-3)** [![GitHub stars](https://img.shields.io/github/stars/h2oai/h2o-3?style=social&color=white)](https://github.com/h2oai/h2o-3/stargazers)  
+- **[H2O-3 (H2O AutoML)](https://github.com/h2oai/h2o-3)** [![GitHub_Stars](https://img.shields.io/github/stars/h2oai/h2o-3?style=social&color=white)](https://github.com/h2oai/h2o-3/stargazers)  
   *Distributed, scalable in-memory machine learning platform with fully automated pipeline construction.*  
   **Highlights:** Automatic training and cross-validation of diverse algorithms (GBM, XGBoost, Random Forest, Deep Learning), stacked ensembles, and lightning-fast MOJO export for instant deployment.
 
-- **[Aim](https://github.com/aimhubio/aim)** [![GitHub stars](https://img.shields.io/github/stars/aimhubio/aim?style=social&color=white)](https://github.com/aimhubio/aim/stargazers)  
+- **[Aim](https://github.com/aimhubio/aim)** [![GitHub_Stars](https://img.shields.io/github/stars/aimhubio/aim?style=social&color=white)](https://github.com/aimhubio/aim/stargazers)  
   *Open-source, self-hosted AI metadata and hyperparameter exploration UI.*  
   **Highlights:** High-performance storage and tracking of tens of thousands of ML training runs, hyperparameter parallel coordinate charts, and sub-second metrics filtering.
 
-- **[FLAML](https://github.com/microsoft/FLAML)** [![GitHub stars](https://img.shields.io/github/stars/microsoft/FLAML?style=social&color=white)](https://github.com/microsoft/FLAML/stargazers)  
+- **[FLAML](https://github.com/microsoft/FLAML)** [![GitHub_Stars](https://img.shields.io/github/stars/microsoft/FLAML?style=social&color=white)](https://github.com/microsoft/FLAML/stargazers)  
   *Fast and lightweight automated machine learning and hyperparameter tuning library.*  
   **Highlights:** Cost-aware and resource-constrained search strategies (CFO and BlendSearch), minimal computational overhead, low latency, and automated tuning across classification, regression, and LLMs.
 
-- **[Nevergrad](https://github.com/facebookresearch/nevergrad)** [![GitHub stars](https://img.shields.io/github/stars/facebookresearch/nevergrad?style=social&color=white)](https://github.com/facebookresearch/nevergrad/stargazers)  
+- **[Nevergrad](https://github.com/facebookresearch/nevergrad)** [![GitHub_Stars](https://img.shields.io/github/stars/facebookresearch/nevergrad?style=social&color=white)](https://github.com/facebookresearch/nevergrad/stargazers)  
   *Python derivative-free optimization platform from Meta AI Research.*  
   **Highlights:** Zero-gradient optimization algorithms (evolution strategies, differential evolution, particle swarm, quasi-random search), noisy and multi-objective optimization support.
 
-- **[MLJAR AutoML (mljar-supervised)](https://github.com/mljar/mljar-supervised)** [![GitHub stars](https://img.shields.io/github/stars/mljar/mljar-supervised?style=social&color=white)](https://github.com/mljar/mljar-supervised/stargazers)  
+- **[MLJAR AutoML (mljar-supervised)](https://github.com/mljar/mljar-supervised)** [![GitHub_Stars](https://img.shields.io/github/stars/mljar/mljar-supervised?style=social&color=white)](https://github.com/mljar/mljar-supervised/stargazers)  
   *Automated machine learning framework with complete interpretability, markdown reports, and feature engineering.*  
   **Highlights:** Generates comprehensive explainability reports (SHAP values, feature importance, ROC curves), four dedicated operation modes (Explain, Perform, Compete, Optuna), and automated stacked ensembling.
 
-- **[KerasTuner](https://github.com/keras-team/keras-tuner)** [![GitHub stars](https://img.shields.io/github/stars/keras-team/keras-tuner?style=social&color=white)](https://github.com/keras-team/keras-tuner/stargazers)  
+- **[KerasTuner](https://github.com/keras-team/keras-tuner)** [![GitHub_Stars](https://img.shields.io/github/stars/keras-team/keras-tuner?style=social&color=white)](https://github.com/keras-team/keras-tuner/stargazers)  
   *Hyperparameter tuning engine specialized for Keras, TensorFlow 2, and PyTorch deep learning models.*  
   **Highlights:** Bayesian optimization, Hyperband, and Random Search tuners with native support for tensorboard visualizations, distributed execution, and custom tuning objectives.
 
-- **[Scikit-Optimize (skopt)](https://github.com/scikit-optimize/scikit-optimize)** [![GitHub stars](https://img.shields.io/github/stars/scikit-optimize/scikit-optimize?style=social&color=white)](https://github.com/scikit-optimize/scikit-optimize/stargazers)  
+- **[Scikit-Optimize (skopt)](https://github.com/scikit-optimize/scikit-optimize)** [![GitHub_Stars](https://img.shields.io/github/stars/scikit-optimize/scikit-optimize?style=social&color=white)](https://github.com/scikit-optimize/scikit-optimize/stargazers)  
   *Sequential model-based optimization library built on top of NumPy, SciPy, and Scikit-Learn.*  
   **Highlights:** Drop-in replacement for scikit-learn's `GridSearchCV` (`BayesSearchCV`), Gaussian process regression, decision tree regressors, and convergence plotting tools.
 
-- **[Katib (Kubeflow)](https://github.com/kubeflow/katib)** [![GitHub stars](https://img.shields.io/github/stars/kubeflow/katib?style=social&color=white)](https://github.com/kubeflow/katib/stargazers)  
+- **[Katib (Kubeflow)](https://github.com/kubeflow/katib)** [![GitHub_Stars](https://img.shields.io/github/stars/kubeflow/katib?style=social&color=white)](https://github.com/kubeflow/katib/stargazers)  
   *Kubernetes-native AutoML, Hyperparameter Tuning, and Neural Architecture Search engine.*  
   **Highlights:** Cloud-native architecture orchestrating Experiments, Trials, and Suggestions on Kubernetes, framework-agnostic worker execution, and tight integration with Kubeflow ML pipelines.
 
-- **[AutoDL-Projects](https://github.com/D-X-Y/AutoDL-Projects)** [![GitHub stars](https://img.shields.io/github/stars/D-X-Y/AutoDL-Projects?style=social&color=white)](https://github.com/D-X-Y/AutoDL-Projects/stargazers)  
+- **[AutoDL-Projects](https://github.com/D-X-Y/AutoDL-Projects)** [![GitHub_Stars](https://img.shields.io/github/stars/D-X-Y/AutoDL-Projects?style=social&color=white)](https://github.com/D-X-Y/AutoDL-Projects/stargazers)  
   *Neural Architecture Search (NAS) and Automated Deep Learning benchmark repository.*  
   **Highlights:** Codebase for NAS-Bench-101/201, providing foundational algorithmic implementations for cell-based, topology-based, and hardware-aware neural architecture optimization.
 
-- **[AIDE ML](https://github.com/WecoAI/aideml)** [![GitHub stars](https://img.shields.io/github/stars/WecoAI/aideml?style=social&color=white)](https://github.com/WecoAI/aideml/stargazers)  
+- **[AIDE ML](https://github.com/WecoAI/aideml)** [![GitHub_Stars](https://img.shields.io/github/stars/WecoAI/aideml?style=social&color=white)](https://github.com/WecoAI/aideml/stargazers)  
   *Autonomous AI agent that writes, evaluates, debugs, and optimizes machine learning solutions.*  
   **Highlights:** Tree-search driven exploration across data pipelines and modeling architectures, iterative code generation, and competitive benchmarking on Kaggle tasks.
 
-- **[Optuna Dashboard](https://github.com/optuna/optuna-dashboard)** [![GitHub stars](https://img.shields.io/github/stars/optuna/optuna-dashboard?style=social&color=white)](https://github.com/optuna/optuna-dashboard/stargazers)  
+- **[Optuna Dashboard](https://github.com/optuna/optuna-dashboard)** [![GitHub_Stars](https://img.shields.io/github/stars/optuna/optuna-dashboard?style=social&color=white)](https://github.com/optuna/optuna-dashboard/stargazers)  
   *Real-time web monitoring and control dashboard for Optuna studies.*  
   **Highlights:** Interactive visualization of hyperparameter importances, high-dimensional Pareto fronts for multi-objective optimization, and live trial management.
 
-- **[ConfigSpace](https://github.com/automl/ConfigSpace)** [![GitHub stars](https://img.shields.io/github/stars/automl/ConfigSpace?style=social&color=white)](https://github.com/automl/ConfigSpace/stargazers)  
+- **[ConfigSpace](https://github.com/automl/ConfigSpace)** [![GitHub_Stars](https://img.shields.io/github/stars/automl/ConfigSpace?style=social&color=white)](https://github.com/automl/ConfigSpace/stargazers)  
   *Python configuration space management package for hyperparameter optimization and AutoML.*  
   **Highlights:** Manages continuous, categorical, ordinal, and conditional hyperparameters; powers search space definitions for Auto-sklearn, SMAC3, and related AutoML tools.
 
@@ -154,7 +154,7 @@ Contributions are warmly welcomed! Help keep this ecosystem map comprehensive an
 
 1. 🍴 **Fork the repository** to your personal GitHub account.
 2. 📝 **Add or update entries** in [`README.md`](file:///C:/Users/ishan/Documents/Projects/Awesome-Automl-Hyperparameter-Tuning/README.md).
-3. ⭐ Ensure open-source projects include star badges with `style=social&color=white` linking to the stargazers page, and keep listings sorted by star count.
+3. ⭐ Ensure open-source projects include Stars_Badges with `style=social&color=white` linking to the stargazers page, and keep listings sorted by Stars_Count.
 4. 💵 For SaaS tools, provide concrete starting pricing and explicit free tier or trial conditions.
 5. 🚀 **Submit a Pull Request** with a descriptive summary of your changes.
 
