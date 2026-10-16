@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#1b263b" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primary-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+
+    <linearGradient id="accent-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a18cd1" />
+      <stop offset="100%" stop-color="#fbc2eb" />
+    </linearGradient>
+
+    <linearGradient id="curve-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38ef7d" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#11998e" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="1" />
+    </linearGradient>
+
+    <filter id="glow-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes pulseGrid {
+        0%, 100% { opacity: 0.15; }
+        50% { opacity: 0.35; }
+      }
+      @keyframes floatParticle {
+        0% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+        50% { transform: translateY(-15px) translateX(10px); opacity: 0.8; }
+        100% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+      }
+      @keyframes dashMove {
+        to { stroke-dashoffset: -40; }
+      }
+      @keyframes pingPoint {
+        0% { r: 4px; opacity: 1; }
+        50% { r: 12px; opacity: 0.2; }
+        100% { r: 4px; opacity: 1; }
+      }
+      .grid-lines {
+        stroke: #415a77;
+        stroke-width: 0.75;
+        animation: pulseGrid 6s ease-in-out infinite;
+      }
+      .particle-1 { animation: floatParticle 5s ease-in-out infinite; }
+      .particle-2 { animation: floatParticle 7s ease-in-out infinite 1.5s; }
+      .particle-3 { animation: floatParticle 6s ease-in-out infinite 3s; }
+      .flowing-curve {
+        stroke-dasharray: 8 6;
+        animation: dashMove 3s linear infinite;
+      }
+      .pulsing-beacon {
+        animation: pingPoint 2.5s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg-grad)" />
+
+  <!-- Dynamic Technical Grid (Background) -->
+  <g class="grid-lines">
+    <line x1="80" y1="0" x2="80" y2="360" />
+    <line x1="200" y1="0" x2="200" y2="360" />
+    <line x1="320" y1="0" x2="320" y2="360" />
+    <line x1="440" y1="0" x2="440" y2="360" />
+    <line x1="560" y1="0" x2="560" y2="360" />
+    <line x1="680" y1="0" x2="680" y2="360" />
+    <line x1="800" y1="0" x2="800" y2="360" />
+    <line x1="920" y1="0" x2="920" y2="360" />
+    <line x1="1040" y1="0" x2="1040" y2="360" />
+
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+  </g>
+
+  <!-- Dynamic Optimization Surface Curves (Ambient Background) -->
+  <g opacity="0.35">
+    <path d="M 50 320 Q 280 260 480 300 T 880 230 T 1150 270" fill="none" stroke="#4facfe" stroke-width="2" class="flowing-curve" />
+    <path d="M 50 340 Q 320 220 620 290 T 1000 200 T 1160 250" fill="none" stroke="url(#curve-gradient)" stroke-width="2.5" />
+    <circle cx="880" cy="230" r="5" fill="#00f2fe" filter="url(#glow-blur)" />
+    <circle cx="880" cy="230" class="pulsing-beacon" fill="none" stroke="#00f2fe" stroke-width="2" />
+    <circle cx="1000" cy="200" r="6" fill="#38ef7d" filter="url(#glow-blur)" />
+    <circle cx="1000" cy="200" class="pulsing-beacon" fill="none" stroke="#38ef7d" stroke-width="2" />
+  </g>
+
+  <!-- Floating Dynamic Tech Particles -->
+  <g>
+    <circle cx="180" cy="90" r="3" fill="#00f2fe" class="particle-1" />
+    <circle cx="280" cy="280" r="4" fill="#a18cd1" class="particle-2" />
+    <circle cx="980" cy="80" r="3.5" fill="#38ef7d" class="particle-3" />
+    <circle cx="1080" cy="290" r="2.5" fill="#00f2fe" class="particle-1" />
+  </g>
+
+  <!-- High-contrast Badge Chips in dynamic flow (Behind title text plane) -->
+  <g opacity="0.85">
+    <rect x="75" y="45" width="130" height="28" rx="14" fill="#1b2a47" stroke="#00f2fe" stroke-width="1" />
+    <text x="140" y="64" fill="#00f2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">⚡ AUTO-ML</text>
+
+    <rect x="220" y="45" width="210" height="28" rx="14" fill="#1b2a47" stroke="#a18cd1" stroke-width="1" />
+    <text x="325" y="64" fill="#a18cd1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🎯 BAYESIAN OPTIMIZATION</text>
+
+    <rect x="850" y="45" width="160" height="28" rx="14" fill="#1b2a47" stroke="#38ef7d" stroke-width="1" />
+    <text x="930" y="64" fill="#38ef7d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🧠 NEURAL ARCH SEARCH</text>
+
+    <rect x="1025" y="45" width="105" height="28" rx="14" fill="#1b2a47" stroke="#4facfe" stroke-width="1" />
+    <text x="1077" y="64" fill="#4facfe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">🚀 HPO ENGINES</text>
+  </g>
+
+  <!-- Foreground Clean Text Content (Guaranteed sharp visibility) -->
+  <g text-anchor="middle">
+    <!-- Main Title -->
+    <text x="600" y="165" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="1.5" filter="drop-shadow(0px 4px 12px rgba(0,0,0,0.8))">
+      Awesome AutoML &amp; Hyperparameter Tuning
+    </text>
+
+    <!-- Gradient Subtitle Tagline -->
+    <text x="600" y="210" fill="url(#primary-glow)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="0.8">
+      Curated Ecosystem for Intelligent Hyperparameter Optimization &amp; Neural Architecture Search
+    </text>
+
+    <!-- Detail Description -->
+    <text x="600" y="248" fill="#e0e1dd" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" letter-spacing="0.5">
+      Distributed Bayesian Search • Multi-Fidelity Schedulers • Cloud-Native &amp; Production-Ready ML Systems
+    </text>
+
+    <!-- Bottom Metric Pills -->
+    <g transform="translate(380, 280)">
+      <rect x="0" y="0" width="130" height="26" rx="13" fill="#0d1b2a" stroke="#415a77" stroke-width="1" />
+      <text x="65" y="17" fill="#778da9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">📊 20+ Open-Source</text>
+
+      <rect x="150" y="0" width="135" height="26" rx="13" fill="#0d1b2a" stroke="#415a77" stroke-width="1" />
+      <text x="217" y="17" fill="#778da9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">🏢 8 SaaS Leaders</text>
+
+      <rect x="305" y="0" width="135" height="26" rx="13" fill="#0d1b2a" stroke="#415a77" stroke-width="1" />
+      <text x="372" y="17" fill="#778da9" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="600">⭐ Top Community</text>
+    </g>
+  </g>
+</svg>

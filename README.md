@@ -1,37 +1,47 @@
-# Awesome AutoML & Hyperparameter Tuning
+<div align="center">
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<img src="./assets/banner.svg" alt="Awesome AutoML &amp; Hyperparameter Tuning Banner" width="100%" />
+
+# ⚡ Awesome AutoML &amp; Hyperparameter Tuning 🚀
+
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)
 [![Track Awesome List](https://escaped-awesome.vercel.app/api/badge?url=https://github.com/ishandutta2007/Awesome-Automl-Hyperparameter-Tuning)](https://escaped-awesome.vercel.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
-> A curated directory of the best **Automated Machine Learning (AutoML)** platforms, **Hyperparameter Optimization (HPO)** frameworks, **Neural Architecture Search (NAS)** engines, and distributed Bayesian optimization tools.
+> 🎯 A curated directory of top **Automated Machine Learning (AutoML)** platforms, **Hyperparameter Optimization (HPO)** frameworks, **Neural Architecture Search (NAS)** engines, and distributed Bayesian optimization tools.
 
----
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS & Hosted Platforms](#saas--hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+</div>
 
 ---
 
-## Sector Overview & Market Dynamics
+## 📑 Table of Contents
+
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Hosted Platforms](#-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [☕ Support](#-support)
+- [⭐ Star History](#-star-history)
+- [⚠️ Disclaimer](#-disclaimer)
+
+---
+
+## 📊 Sector Overview & Market Dynamics
 
 The global **Automated Machine Learning (AutoML) & Hyperparameter Tuning** market is estimated at **$2.34B – $4.5B** in 2025 and is projected to reach **$3.43B – $6.5B+** by 2026, compounding at an accelerated **45%–48% CAGR**.
 
 Market dynamics exhibit **moderate fragmentation with multi-cloud polarization**:
-- **Hyperscalers (Google Cloud, AWS, Microsoft Azure)** dominate turnkey enterprise pipeline hosting with integrated, consumption-billed black-box optimizers (Vizier, SageMaker Autopilot).
-- **Specialized Enterprise Platforms (DataRobot, H2O.ai, W&B, ClearML)** defend defensible footholds across governance, high-compliance financial/healthcare modeling, and LLM fine-tuning pipelines.
-- Simultaneously, **open-source frameworks (Ray Tune, Optuna, FLAML, Katib)** drive deep bottom-up adoption, preventing a total "winner-take-all" outcome by giving engineering teams transparent, vendor-agnostic control over massive distributed search spaces.
+- 🌐 **Hyperscalers (Google Cloud, AWS, Microsoft Azure)** dominate turnkey enterprise pipeline hosting with integrated, consumption-billed black-box optimizers (Vizier, SageMaker Autopilot).
+- 🛡️ **Specialized Enterprise Platforms (DataRobot, H2O.ai, W&B, ClearML)** defend defensible footholds across governance, high-compliance financial/healthcare modeling, and LLM fine-tuning pipelines.
+- ⚙️ Simultaneously, **open-source frameworks (Ray Tune, Optuna, FLAML, Katib)** drive deep bottom-up adoption, preventing a total "winner-take-all" outcome by giving engineering teams transparent, vendor-agnostic control over massive distributed search spaces.
 
 ---
 
-## SaaS & Hosted Platforms
+## 🏢 SaaS & Hosted Platforms
 
-| Platform | Company Valuation / Revenue | Starting Pricing Tier | Free Tier & Free Trial Limits | Key Highlights & Architecture |
+| 🏷️ Platform | 💰 Company Valuation / Revenue | 💳 Starting Pricing Tier | 🎁 Free Tier & Free Trial Limits | 🔍 Key Highlights & Architecture |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Google Cloud Vertex AI Vizier](https://cloud.google.com/vertex-ai)** | **Alphabet: ~$2.2T+ Market Cap** ($350B+ Ann. Revenue) | **$0.05 / hour** per study node (plus underlying Vertex AI compute, e.g., ~$0.15–$0.40+/hr per n1-standard instance) | **90-day free trial with $300 cloud credits** across all Google Cloud services; Vertex AI offers monthly free tiers on select API evaluations. | Black-box hyperparameter tuning service featuring transfer learning across Bayesian optimization studies, multi-objective optimization, and native distributed trial coordination. |
 | **[AWS SageMaker Autopilot](https://aws.amazon.com/sagemaker/autopilot/)** | **Amazon: ~$1.9T+ Market Cap** ($570B+ Ann. Revenue) | **$0.05 / hour** for SageMaker Studio notebook / training job coordinator (e.g. `ml.t3.medium` @ ~$0.05/hr; pay-as-you-go based on underlying EC2 instance type) | **AWS Free Tier (2 months free)**: 250 hours per month of `ml.t3.medium` instances for SageMaker Studio; 12-month free tier credits across core AWS. | Fully managed AutoML automating feature engineering, algorithm selection, and hyperparameter tuning with transparent Python notebook generation and deployable model artifacts. |
@@ -44,7 +54,7 @@ Market dynamics exhibit **moderate fragmentation with multi-cloud polarization**
 
 ---
 
-## Open-Source GitHub Projects
+## 💻 Open-Source GitHub Projects
 
 Ranked by GitHub stargazers count:
 
@@ -138,20 +148,36 @@ Ranked by GitHub stargazers count:
 
 ---
 
-## How to Contribute
+## 🤝 How to Contribute
 
 Contributions are warmly welcomed! Help keep this ecosystem map comprehensive and up-to-date:
 
-1. **Fork the repository** to your personal GitHub account.
-2. **Add or update entries** in [`README.md`](file:///C:/Users/ishan/Documents/Projects/Awesome-Automl-Hyperparameter-Tuning/README.md).
-3. Ensure open-source projects include star badges with `style=social&color=white` linking to the stargazers page, and keep listings sorted by star count.
-4. For SaaS tools, provide concrete starting pricing and explicit free tier or trial conditions.
-5. **Submit a Pull Request** with a descriptive summary of your changes.
+1. 🍴 **Fork the repository** to your personal GitHub account.
+2. 📝 **Add or update entries** in [`README.md`](file:///C:/Users/ishan/Documents/Projects/Awesome-Automl-Hyperparameter-Tuning/README.md).
+3. ⭐ Ensure open-source projects include star badges with `style=social&color=white` linking to the stargazers page, and keep listings sorted by star count.
+4. 💵 For SaaS tools, provide concrete starting pricing and explicit free tier or trial conditions.
+5. 🚀 **Submit a Pull Request** with a descriptive summary of your changes.
 
 ---
 
-## Disclaimer
+## ☕ Support
 
-- This curated list is maintained by the community for educational and research purposes—it does not constitute a formal commercial endorsement.
-- All AutoML platforms and hyperparameter search workflows handling enterprise data must adhere to relevant privacy and compliance mandates (GDPR, CCPA, HIPAA, SOC 2).
-- Framework choice should prioritize team maintainability, operational fit, and infrastructure requirements over raw benchmark leaderboards alone.
+Thank you for visiting and using this curated resource! If this repository helped you in your ML workflows or research, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it!
+- 🍴 **Fork and contribute** new tools and updates!
+- 📢 **Share** with your fellow ML engineers and data science teams!
+- 💖 **Buy a coffee / Sponsor**: Support ongoing maintenance via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+##  Star History
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Automl-Hyperparameter-Tuning&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Automl-Hyperparameter-Tuning&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- 📌 This curated list is maintained by the community for educational and research purposes—it does not constitute a formal commercial endorsement.
+- 🔒 All AutoML platforms and hyperparameter search workflows handling enterprise data must adhere to relevant privacy and compliance mandates (GDPR, CCPA, HIPAA, SOC 2).
+- 🎯 Framework choice should prioritize team maintainability, operational fit, and infrastructure requirements over raw benchmark leaderboards alone.
